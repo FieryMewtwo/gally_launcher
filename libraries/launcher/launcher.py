@@ -259,11 +259,11 @@ class gally_launcher:
                         self.access_token = launcher_accounts["accounts"][id]["accessToken"]
                         self.set_username(launcher_accounts["accounts"][id]["minecraftProfile"]["name"])
                         client_token = launcher_accounts["accounts"][id]["remoteId"]
-                        if self.validate(self.access_token, client_token) == False:
-                            if self.refresh(self.access_token, client_token) == True:
-                                return True
-                        else:
-                            return True
+                        # if self.validate(self.access_token, client_token) == False:
+                        #     if self.refresh(self.access_token, client_token) == True:
+                        #         return True
+                        # else:
+                        #     return True
                             
         if password == None:
             password = getpass.getpass("Password to Login : ")
@@ -334,7 +334,7 @@ class gally_launcher:
     def validate(self, accessToken, clientToken):
         payload = {
             "accessToken": accessToken,
-            "clientToken": clientToken
+            # "clientToken": clientToken
         }
         headers={'Content-type':'application/json'}
         resp = web.post("https://authserver.mojang.com/validate", payload, headers=headers)
