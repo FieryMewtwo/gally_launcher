@@ -1,6 +1,6 @@
 # Gally Launcher!
 
-Gally Launcher is a Minecraft Launcher but in CLI (Command Line Interface). There is no GUI (Graphic User Interface) or any window interactible.
+Gally Launcher is a Minecraft Launcher but for the command line!
 
 ## Disclaimer
 I am not a Minecraft developer. I just made the launcher I always wanted to have. Any request from Minecraft related companies to remove my code will be granted. 
@@ -21,8 +21,8 @@ Download the [latest release](https://github.com/coni/gally_launcher/releases/do
 ## Usage  
 I highly recommend using Gally Launcher with a terminal such as cmd.exe or any other Linux terminal. If you don't know how to use a terminal, I suggest you look for guides on the Internet. It is really important to know the basics of a terminal.
 
-### Exemple
-To simply start Minecraft with "coni" as username in 1.16.5
+### Example
+This command would start Minecraft with "coni" as username in version 1.16.5
 ```bash
 gally_launcher -u coni -v 1.16.5
 ```  
@@ -31,7 +31,7 @@ or if you use Python
 python3 __main__.py -u coni -v 1.16.5
 ```
 
-to know every possibility of my launcher
+if you need help with the launcher
 ```bash
 gally_launcher --help
 ```
